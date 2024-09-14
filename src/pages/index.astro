@@ -1,9 +1,16 @@
 ---
+import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
+import imageQrCode from '../assets/images/image-qr-code.png';
 ---
 
 <Layout title="Frontend Mentor | QR code component">
 
-	<h1>Hello Astro</h1>
+	<Card 
+		title="Improve your front-end skills by building projects"
+		info="Scan the QR code to visit Frontend Mentor and take your coding skills to the next level"
+		imgSrc={imageQrCode.src}
+		imgAlt="Image QR code component"
+	/>
 
 </Layout>

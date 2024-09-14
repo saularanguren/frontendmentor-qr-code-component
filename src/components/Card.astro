@@ -1,0 +1,13 @@
+---
+const { title, info, imgSrc, imgAlt } = Astro.props;
+---
+
+<main class="w-80 h-[31.1875rem] flex flex-col items-start justify-start gap-6 px-4 pt-4 pb-10 rounded-[1.25rem] shadow-card-shadow bg-white">
+    <picture class="size-72">
+        <img src={imgSrc} alt={imgAlt} class="size-full rounded-[0.6250rem]">
+    </picture>
+    <section class="w-72 h-[8.1875rem] flex flex-col justify-start items-center gap-4 px-4">
+        <h1 class="w-64 h-[3.25rem] text-center font-bold text-[1.3750rem] leading-[120%] tracking-normal text-slate900">{title}</h1>
+        <p class="w-64 h-[3.9375rem] text-center font-normal text-[0.9375rem] leading-[140%] tracking-[0.0125rem] text-slate500">{info}</p>
+    </section>
+</main>
