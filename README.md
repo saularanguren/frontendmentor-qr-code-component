@@ -4,7 +4,7 @@
 
 ### Welcome! 👋
 
-Thanks for checking out this front-end coding challenge. [QR code page live]() 🚀
+Thanks for checking out this front-end coding challenge. [QR code page live](https://frontendmentor-qr-code-component-git.vercel.app/) 🚀
 
 ### Download
 
