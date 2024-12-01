@@ -1,0 +1,55 @@
+@use 'layout';
+@use 'variables';
+
+.card {
+    width: 20rem;
+    height: 31.1875rem;
+
+    padding: 1rem 1rem 2.5rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0477);
+
+    @include layout.flex(start, start, column);
+    row-gap: 1.5rem;
+}
+
+.card__picture,
+.card__picture img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 0.6250rem;
+}
+
+.card__article {
+    width: 18rem;
+    height: 8.1875rem;
+
+    padding: 0 1rem;
+    text-align: center;
+
+    @include layout.flex(center, flex-start, column);
+    row-gap: 1rem;
+}
+
+.card__title {
+    width: 16rem;
+    height: 3.2500rem;
+
+    font-size: 1.3750rem;
+    font-weight: variables.$bold;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: variables.$slate-900;
+}
+
+.card__description {
+    width: 16rem;
+    height: 3.9375rem;
+
+    font-size: 0.9375rem;
+    font-weight: variables.$regular;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: variables.$slate-500;
+}

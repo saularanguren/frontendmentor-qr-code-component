@@ -1,0 +1,19 @@
+---
+const { title, description, img, alt } = Astro.props;
+---
+
+<!-- main container -->
+<main class="card">
+
+    <!-- image container -->
+    <picture class="card__picture">
+        <img src={img} alt={alt} />
+    </picture>
+
+    <!-- information container -->
+    <article class="card__article">
+        <h1 class="card__title">{title}</h1>
+        <p class="card__description">{description}</p>
+    </article>
+
+</main>
